@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -65,4 +68,19 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("/src/assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("/src/assets/fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
 }
