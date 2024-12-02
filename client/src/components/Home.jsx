@@ -29,7 +29,7 @@ const Home = () => {
 
         {/* Main Section */}
         <main className="flex flex-col mt-16 items-center font-gilroy text-center px-8 flex-grow">
-          <h1 className="text-3xl md:text-5xl font-bold mt-8">
+          <h1 className="text-3xl md:text-5xl font-gilroy font-extrabold mt-8">
             Order Dairy products & groceries. Daily services!
           </h1>
           <div id="image-container" className="content-start">
