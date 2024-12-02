@@ -79,20 +79,61 @@ button:focus-visible {
   color: #888;
 }
 
-@keyframes card-con {
+@keyframes slideInFromLeft {
   from {
     opacity: 0;
-    transform: scale(0.5); /* Use 'transform' instead of 'scale' */
+    transform: translateX(-100px);
+    scale: 0.5;
   }
   to {
+    scale: 1;
+    transform: translateX(0);
     opacity: 1;
-    transform: scale(1); /* Ensure smooth scaling */
   }
 }
 
-#card-container {
-  animation-name: card-con;
-  animation-duration: 1s; /* Specify duration */
-  animation-timing-function: ease-in-out; /* Smooth easing */
-  animation-fill-mode: forwards; /* Retain final state */
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+    scale: 0.5;
+  }
+  to {
+    scale: 1;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromMiddle {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+    scale: 0.5;
+  }
+  to {
+    scale: 1;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.card-container1 {
+  animation-name: slideInFromMiddle;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+.card-container2 {
+  animation-name: slideInFromMiddle;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+.card-container3 {
+  animation-name: slideInFromMiddle;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+.card-container4 {
+  animation-name: slideInFromMiddle;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
 }
