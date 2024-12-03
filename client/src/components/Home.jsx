@@ -38,17 +38,36 @@ const Home = () => {
           <h1 className="text-3xl md:text-5xl font-gilroy font-extrabold mt-8">
             Order Dairy products & groceries. Daily services!
           </h1>
-          <div className="location-container">
-            <div className="entryArea">
-              <input type="text" required />
-            </div>
+          {/*  location */}
+          <div className="relative mt-28">
+            <input
+              type="text"
+              required
+              className="bg-white rounded-md w-80 h-10 text-black pl-10 pr-4 p-2"
+              placeholder="Search Location"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 text-black"
+            >
+              <path
+                fillRule="evenodd"
+                d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
+
+          {/* side image */}
           <div
             id="image-container"
             className="content-start absolute -left-52 rotate-45 bottom-3.5 hidden lg:block"
           >
             <img src={bag} alt="bag" />
           </div>
+
           <div
             id="image-container"
             className="content-start absolute transform transition-all duration-500 lg:block hidden"
@@ -78,7 +97,7 @@ const Home = () => {
           {/* Cards Section */}
           <div
             id="card-container"
-            className="mt-80 flex flex-wrap justify-center items-stretch gap-6 mt-12 w-full max-w-5xl"
+            className="mt-52 flex flex-wrap justify-center items-stretch gap-6 mt-12 w-full max-w-5xl"
           >
             {/* Card 1 */}
             <div className="card-container1 bg-white text-black p-6 rounded-lg shadow-lg flex-1 max-w-xs md:max-w-sm">

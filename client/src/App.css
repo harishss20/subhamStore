@@ -108,5 +108,5 @@ button:focus-visible {
   width: 100%;
   height: auto;
   position: relative;
-  overflow: hidden; /* Prevent inner element overflows */
+  overflow: hidden;
 }
