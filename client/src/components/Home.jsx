@@ -34,18 +34,9 @@ const Home = () => {
           <h1 className="text-3xl md:text-5xl font-gilroy font-extrabold mt-8">
             Order Dairy products & groceries. Daily services!
           </h1>
-          <div className="flex mt-20 content-center">
-            <div>
-              <Box
-                component="form"
-                sx={{ "& .MuiTextField-root": { m: 1, width: "25ch" } }}
-                noValidate
-                autoComplete="off"
-              >
-                <div className="size-40">
-                  <TextField fullWidth label="fullWidth" id="fullWidth" />
-                </div>
-              </Box>
+          <div className="location-container">
+            <div className="entryArea">
+              <input type="text" required />
             </div>
           </div>
           <div
