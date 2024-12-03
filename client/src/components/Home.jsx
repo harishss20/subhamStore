@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import bag from "../assets/bag.png";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 import "../App.css";
 const Home = () => {
   return (
@@ -32,14 +34,31 @@ const Home = () => {
           <h1 className="text-3xl md:text-5xl font-gilroy font-extrabold mt-8">
             Order Dairy products & groceries. Daily services!
           </h1>
-          <div id="image-container" className="content-start">
+          <div className="flex mt-20 content-center">
+            <div>
+              <Box
+                component="form"
+                sx={{ "& .MuiTextField-root": { m: 1, width: "25ch" } }}
+                noValidate
+                autoComplete="off"
+              >
+                <div className="size-40">
+                  <TextField fullWidth label="fullWidth" id="fullWidth" />
+                </div>
+              </Box>
+            </div>
+          </div>
+          <div
+            id="image-container"
+            className="content-start absolute -left-52 rotate-45 bottom-3.5 hidden lg:block"
+          >
             <img src={bag} alt="bag" />
           </div>
 
           {/* Cards Section */}
           <div
             id="card-container"
-            className=" flex flex-wrap justify-center items-stretch gap-6 mt-12 w-full max-w-5xl"
+            className="mt-44 flex flex-wrap justify-center items-stretch gap-6 mt-12 w-full max-w-5xl"
           >
             {/* Card 1 */}
             <div className="card-container1 bg-white text-black p-6 rounded-lg shadow-lg flex-1 max-w-xs md:max-w-sm">
