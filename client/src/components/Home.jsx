@@ -1,13 +1,17 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import bag from "../assets/bag.png";
+import dairyProducts from "../assets/dairyProducts.png";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import "../App.css";
 const Home = () => {
   return (
     <div>
-      <div className="w-full h-auto pb-16 bg-gradient-to-b from-[#5DAECC] to-[#1D80AA] text-white flex flex-col">
+      <div
+        className="w-full h-auto pb-16 bg-gradient-to-b from-[#5DAECC] to-[#1D80AA] text-white flex flex-col"
+        style={{ overflowX: "hidden" }}
+      >
         {/* Header Section */}
         <header className="w-full flex justify-between items-center px-8 py-4 bg-orange-500">
           {/* Logo Section */}
@@ -45,11 +49,36 @@ const Home = () => {
           >
             <img src={bag} alt="bag" />
           </div>
+          <div
+            id="image-container"
+            className="content-start absolute transform transition-all duration-500 lg:block hidden"
+            style={{
+              maxWidth: "40vw",
+              maxHeight: "40vw",
+              zIndex: 1,
+
+              bottom: "-20%",
+              right: "0",
+              transform: "rotate(-38deg) translateX(50%)",
+              overflow: "hidden",
+            }}
+          >
+            <img
+              src={dairyProducts}
+              alt="dairyProducts"
+              className="w-full h-auto"
+              style={{
+                objectFit: "contain",
+                maxWidth: "100%",
+                maxHeight: "100%",
+              }}
+            />
+          </div>
 
           {/* Cards Section */}
           <div
             id="card-container"
-            className="mt-44 flex flex-wrap justify-center items-stretch gap-6 mt-12 w-full max-w-5xl"
+            className="mt-80 flex flex-wrap justify-center items-stretch gap-6 mt-12 w-full max-w-5xl"
           >
             {/* Card 1 */}
             <div className="card-container1 bg-white text-black p-6 rounded-lg shadow-lg flex-1 max-w-xs md:max-w-sm">

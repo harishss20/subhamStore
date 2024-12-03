@@ -31,5 +31,6 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensure full height */
+  overflow-x: hidden; /* Prevent horizontal scrollbars */
+  overflow-y: auto; /* Ensure full height */
 }

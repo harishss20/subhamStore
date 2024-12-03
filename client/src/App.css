@@ -2,7 +2,10 @@
   width: 100%;
   height: 100%; /* Ensure full height */
   display: flex;
-  flex-direction: column; /* Ensure the layout is vertical */
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+  /* Ensure the layout is vertical */
 }
 
 header {
@@ -101,4 +104,9 @@ button:focus-visible {
   }
 }
 
-/* Location input */
+#wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden; /* Prevent inner element overflows */
+}
