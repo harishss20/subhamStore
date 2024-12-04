@@ -2,9 +2,8 @@ import React from "react";
 import logo from "../assets/logo.png";
 import bag from "../assets/bag.png";
 import dairyProducts from "../assets/dairyProducts.png";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
 import "../App.css";
+
 const Home = () => {
   return (
     <div>
@@ -23,11 +22,11 @@ const Home = () => {
           <div className="flex items-center text-white space-x-6">
             <a
               href="#app"
-              className="bg-black text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:ease-in-out transition "
+              className="bg-black text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:ease-in-out transition"
             >
               Get the App
             </a>
-            <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:ease-in-out transition ">
+            <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:ease-in-out transition">
               Sign in
             </button>
           </div>
@@ -38,7 +37,8 @@ const Home = () => {
           <h1 className="text-3xl md:text-5xl font-gilroy font-extrabold mt-8">
             Order Dairy products & groceries. Daily services!
           </h1>
-          {/*  location */}
+
+          {/* Location Search */}
           <div className="relative mt-28">
             <input
               type="text"
@@ -60,44 +60,20 @@ const Home = () => {
             </svg>
           </div>
 
-          {/* side image */}
-          <div
-            id="image-container"
-            className="content-start absolute -left-52 rotate-45 bottom-3.5 hidden lg:block"
-          >
-            <img src={bag} alt="bag" />
-          </div>
-
-          <div
-            id="image-container"
-            className="content-start absolute transform transition-all duration-500 lg:block hidden"
-            style={{
-              maxWidth: "40vw",
-              maxHeight: "40vw",
-              zIndex: 1,
-
-              bottom: "-20%",
-              right: "0",
-              transform: "rotate(-38deg) translateX(50%)",
-              overflow: "hidden",
-            }}
-          >
-            <img
-              src={dairyProducts}
-              alt="dairyProducts"
-              className="w-full h-auto"
-              style={{
-                objectFit: "contain",
-                maxWidth: "100%",
-                maxHeight: "100%",
-              }}
-            />
+          {/* Images */}
+          <div id="image-container">
+            <div className="absolute -left-52 rotate-45 bottom-3.5 ">
+              <img src={bag} alt="bag" />
+            </div>
+            <div className="absolute w-72 right-0 -bottom-16 ">
+              <img src={dairyProducts} alt="Dairy Products" />
+            </div>
           </div>
 
           {/* Cards Section */}
           <div
             id="card-container"
-            className="mt-52 flex flex-wrap justify-center items-stretch gap-6 mt-12 w-full max-w-5xl"
+            className="flex flex-wrap justify-center items-stretch gap-6 mt-32 w-3/5 max-w-6xl px-4"
           >
             {/* Card 1 */}
             <div className="card-container1 bg-white text-black p-6 rounded-lg shadow-lg flex-1 max-w-xs md:max-w-sm">
