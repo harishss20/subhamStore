@@ -17,7 +17,7 @@ const Home = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
             <img id="logo-container" src={logo} alt="Logo" className="h-8" />
-            <h1 className="text-xl font-bold">Shubham Store</h1>
+            <h2 className="text-xl font-bold">Shubham Store</h2>
           </div>
           {/* Links Section */}
           <div className="flex items-center text-white space-x-6">
@@ -35,10 +35,11 @@ const Home = () => {
 
         {/* Main Section */}
         <main className="flex flex-col mt-16 items-center font-gilroy text-center px-8 flex-grow">
-          <h1 className="text-3xl md:text-5xl font-gilroy font-extrabold mt-8">
-            Order Dairy products & groceries. Daily services!
-          </h1>
-
+          <div className="text-container">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-gilroy font-extrabold mt-8">
+              Order Dairy products & groceries. Daily services!
+            </h2>
+          </div>
           {/* Location Search */}
           <div className="relative mt-28">
             <input
