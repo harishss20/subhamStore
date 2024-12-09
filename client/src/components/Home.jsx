@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/logo.png";
 import bag from "../assets/bag.png";
 import dairyProducts from "../assets/dairyProducts.png";
+import Card from "./Card";
 import "../App.css";
 
 const Home = () => {
@@ -71,35 +72,7 @@ const Home = () => {
           </div>
 
           {/* Cards Section */}
-          <div
-            id="card-container"
-            className="flex flex-wrap justify-center items-stretch gap-6 mt-32 w-3/5 max-w-6xl px-4"
-          >
-            {/* Card 1 */}
-            <div className="card-container1 bg-white text-black p-6 rounded-lg shadow-lg flex-1 max-w-xs md:max-w-sm">
-              <h2 className="text-xl font-bold">FOOD DELIVERY</h2>
-              <p className="mt-2">FROM RESTAURANTS</p>
-              <span className="text-orange-500 font-bold">UPTO 60% OFF</span>
-            </div>
-            {/* Card 2 */}
-            <div className="card-container2 bg-white text-black p-6 rounded-lg shadow-lg flex-1 max-w-xs md:max-w-sm">
-              <h2 className="text-xl font-bold">INSTAMART</h2>
-              <p className="mt-2">INSTANT GROCERY</p>
-              <span className="text-orange-500 font-bold">UPTO 60% OFF</span>
-            </div>
-            {/* Card 3 */}
-            <div className="card-container3 bg-white text-black p-6 rounded-lg shadow-lg flex-1 max-w-xs md:max-w-sm">
-              <h2 className="text-xl font-bold">DINEOUT</h2>
-              <p className="mt-2">EAT OUT & SAVE MORE</p>
-              <span className="text-orange-500 font-bold">UPTO 50% OFF</span>
-            </div>
-            {/* Card 4 */}
-            <div className="card-container4 bg-white text-black p-6 rounded-lg shadow-lg flex-1 max-w-xs md:max-w-sm">
-              <h2 className="text-xl font-bold">GENIE</h2>
-              <p className="mt-2">PICK-UP & DROP</p>
-              <span className="text-orange-500 font-bold">UPTO 50% OFF</span>
-            </div>
-          </div>
+          <Card />
         </main>
       </div>
     </div>

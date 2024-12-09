@@ -45,28 +45,6 @@ button:hover {
   border-color: #646cff;
 }
 
-.card-container1,
-.card-container2,
-.card-container3,
-.card-container4 {
-  animation-name: slideInFromBottom;
-  animation-timeline: view();
-  animation-range: entry 0 cover 30%;
-}
-
-@keyframes slideInFromBottom {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-    scale: 0.5;
-  }
-  to {
-    scale: 1;
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 @media screen and (max-width: 1366px) {
   #image-container {
     display: none;
