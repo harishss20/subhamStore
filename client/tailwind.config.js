@@ -12,8 +12,10 @@ export default {
     colors: {
       second: "#1D80AA",
       first: "#5DAECC",
-      white: "#ffffff",
+      white: "#F4F6FF",
       black: "#1B1833",
+      green: "#DFF8E7",
+      lightBrown: "#FDF7F4",
     },
     extend: {
       keyframes: {
