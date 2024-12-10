@@ -50,9 +50,6 @@ button:hover {
     display: none;
   }
 }
-#image-container {
-  overflow-x: clip;
-}
 
 .home-container {
   background-image: url("./assets/background.png");

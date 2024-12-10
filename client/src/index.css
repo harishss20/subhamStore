@@ -29,5 +29,13 @@ body,
 html {
   margin: 0;
   padding: 0;
-  overflow-x: clip;
+  overflow-x: hidden; /* Keeps horizontal overflow hidden */
+}
+
+.brand-image {
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  object-fit: cover;
+  border-radius: 50%; /* Makes the image round */
+  border: 2px solid #fff; /* Optional border */
 }

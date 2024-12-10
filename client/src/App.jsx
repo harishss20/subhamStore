@@ -1,15 +1,12 @@
-import "./App.css";
 import Home from "./components/Home";
-import MobileApp from "./components/MobileApp";
+
+import Brands from "./components/Brands";
 function App() {
   return (
     <>
       <Home />
-      <MobileApp />
-      <MobileApp />
-      <MobileApp />
-      <MobileApp />
-      <MobileApp />
+
+      <Brands />
     </>
   );
 }
