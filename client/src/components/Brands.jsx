@@ -89,7 +89,7 @@ function Brands() {
                 <img
                   src={brand.image}
                   alt={brand.name}
-                  className="  w-32 h-32 object-cover mx-auto border rounded-full"
+                  className="w-32 h-32 object-cover mx-auto border-2 border-black rounded-full shadow-2xl cursor-pointer"
                 />
               </div>
               <h1 className="text-lg text-center mt-2">{brand.name}</h1>

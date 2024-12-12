@@ -12,7 +12,7 @@ export default {
     colors: {
       second: "#1D80AA",
       first: "#BFECFF",
-      white: "#e1f5fe",
+      white: "#FBFBFB",
       black: "#1B1833",
       green: "#DFF8E7",
       lightBrown: "#FDF7F4",
