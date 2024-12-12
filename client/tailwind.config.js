@@ -34,6 +34,7 @@ export default {
         cardHover: "cardHover 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards",
       },
       fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
         gilroy: ["Gilroy", "sans-serif"],
       },
     },

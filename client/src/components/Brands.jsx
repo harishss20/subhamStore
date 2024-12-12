@@ -78,7 +78,7 @@ function Brands() {
   return (
     <div className="w-full  text-black bg-first p-10">
       <div className="font-gilroy   ml-20 w-10/12">
-        <h1 className="mb-12">Our Exclusive Brands</h1>
+        <h1 className="mb-12 font-roboto">Our Exclusive Brands</h1>
         <Slider {...settings}>
           {brands.map((brand, index) => (
             <div
