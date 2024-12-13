@@ -2,16 +2,20 @@ import React from "react";
 import "../App.css";
 import { bestSellProducts } from "./Utils";
 
-function CardItem({ header, description, price }) {
+function CardItem({ header, description, image }) {
   return (
-    <div className="card-container bg-white text-black p-4 rounded-lg shadow-lg flex-1 w-full max-w-full sm:max-w-sm min-h-[150px] duration-500 backdrop-brightness-200 ease-in-out transform hover:rotate-3 hover:scale-105 hover:bg-[url('assets/image1.webp')] bg-cover cursor-pointer relative overflow-hidden sm:min-h-[180px]">
-      <div className="absolute inset-0 bg-white opacity-100 hover:opacity-0 duration-500 ease-in-out flex flex-col justify-center items-center p-4 sm:p-6">
+    <div className="card-container bg-white text-black p-4 rounded-lg shadow-lg flex-1 w-full max-w-full sm:max-w-sm min-h-[150px] duration-500 ease-in-out transform hover:rotate-3 hover:scale-105 cursor-pointer relative overflow-hidden sm:min-h-[180px]">
+      {/* Text Content */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center p-4 sm:p-6 z-20 bg-white  hover:opacity-0 transition-opacity duration-500">
         <h2 className="text-base font-bold sm:text-lg lg:text-xl">{header}</h2>
         <p className="mt-2 text-sm sm:text-base lg:text-lg">{description}</p>
-        <span className="text-orange-500 font-bold text-sm sm:text-base lg:text-lg">
-          {price}
-        </span>
       </div>
+
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-10 hover:opacity-100 transition-opacity duration-500"
+        style={{ backgroundImage: `url(${image})` }}
+      ></div>
     </div>
   );
 }
@@ -27,7 +31,7 @@ function Card() {
           key={index}
           header={product.header}
           description={product.dic}
-          price={product.price}
+          image={product.image}
         />
       ))}
     </div>
