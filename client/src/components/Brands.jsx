@@ -21,7 +21,14 @@ import SurfExcelImage from "../assets/productImages/surfexcel/webp/surf.webp";
 import TideImage from "../assets/productImages/tide/webp/tide.webp";
 import TataImage from "../assets/productImages/surfexcel/webp/tata.webp";
 
+import { useNavigate } from "react-router-dom";
+
 function Brands() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/productsList", { replace: true });
+  };
+
   const brands = [
     { name: "Aachi", image: AachiImage },
     { name: "Aavin", image: AavinImage },
@@ -89,6 +96,7 @@ function Brands() {
                 <img
                   src={brand.image}
                   alt={brand.name}
+                  onClick={handleClick}
                   className="w-32 h-32 object-cover mx-auto border-2 border-black rounded-full shadow-2xl cursor-pointer"
                 />
               </div>
