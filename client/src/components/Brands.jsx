@@ -21,14 +21,7 @@ import SurfExcelImage from "../assets/productImages/surfexcel/webp/surf.webp";
 import TideImage from "../assets/productImages/tide/webp/tide.webp";
 import TataImage from "../assets/productImages/surfexcel/webp/tata.webp";
 
-import { useNavigate } from "react-router-dom";
-
 function Brands() {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/productsList", { replace: true });
-  };
-
   const brands = [
     { name: "Aachi", image: AachiImage },
     { name: "Aavin", image: AavinImage },
@@ -85,18 +78,17 @@ function Brands() {
   return (
     <div className="w-full  text-black bg-first p-10">
       <div className="font-gilroy   ml-20 w-10/12">
-        <h1 className="mb-12 font-roboto">Our Exclusive Brands</h1>
+        <h1 className="mb-12 font-serif">Our Exclusive Brands</h1>
         <Slider {...settings}>
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="flex  pointer-cursor flex-col items-center justify-center gap-2"
+              className="flex mt-2 duration-300 pointer-cursor flex-col items-center justify-center gap-2 hover:scale-105"
             >
               <div>
                 <img
                   src={brand.image}
                   alt={brand.name}
-                  onClick={handleClick}
                   className="w-32 h-32 object-cover mx-auto border-2 border-black rounded-full shadow-2xl cursor-pointer"
                 />
               </div>

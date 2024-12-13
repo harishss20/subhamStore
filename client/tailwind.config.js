@@ -10,11 +10,11 @@ export default {
       "2xl": "1536px",
     },
     colors: {
-      second: "#1D80AA",
-      first: "#BFECFF",
-      white: "#FBFBFB",
+      second: "#FFFFFF",
+      first: "#F5F7F8",
+      white: "#ffffff",
       black: "#1B1833",
-      green: "#DFF8E7",
+      green: "#F0F8FF",
       lightBrown: "#FDF7F4",
     },
     extend: {
