@@ -10,7 +10,7 @@ export default {
       "2xl": "1536px",
     },
     colors: {
-      second: "#FFFFFF",
+      second: "#81BFDA",
       first: "#F5F7F8",
       white: "#ffffff",
       black: "#1B1833",

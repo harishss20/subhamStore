@@ -23,13 +23,14 @@ import TideImage from "../assets/productImages/tide/webp/tide.webp";
 import TataImage from "../assets/productImages/surfexcel/webp/tata.webp";
 
 //productData
+//1
 import Aachi1 from "../assets/productImages/Aachi/webp/1.webp";
 import Aachi2 from "../assets/productImages/Aachi/webp/2.webp";
 import Aachi3 from "../assets/productImages/Aachi/webp/3.webp";
 import Aachi4 from "../assets/productImages/Aachi/webp/4.webp";
 import Aachi5 from "../assets/productImages/Aachi/webp/5.webp";
 import Aachi6 from "../assets/productImages/Aachi/webp/6.webp";
-import Aachi7 from "../assets/productImages/Aachi/webp/7.webp";
+
 import Aachi8 from "../assets/productImages/Aachi/webp/8.webp";
 import Aachi9 from "../assets/productImages/Aachi/webp/9.webp";
 import Aachi10 from "../assets/productImages/Aachi/webp/10.webp";
@@ -38,21 +39,42 @@ import Aachi12 from "../assets/productImages/Aachi/webp/12.webp";
 import Aachi13 from "../assets/productImages/Aachi/webp/13.webp";
 import Aachi14 from "../assets/productImages/Aachi/webp/14.webp";
 
+//2
+import Aavin1 from "../assets/productImages/aavin/webp/1.webp";
+import Aavin2 from "../assets/productImages/aavin/webp/2.webp";
+import Aavin3 from "../assets/productImages/aavin/webp/3.webp";
+import Aavin4 from "../assets/productImages/aavin/webp/4.webp";
+import Aavin5 from "../assets/productImages/aavin/webp/5.webp";
+
 export const ProductData = [
-  { image: Aachi1 },
-  { image: Aachi2 },
-  { image: Aachi3 },
-  { image: Aachi4 },
-  { image: Aachi5 },
-  { image: Aachi6 },
-  { image: Aachi7 },
-  { image: Aachi8 },
-  { image: Aachi9 },
-  { image: Aachi10 },
-  { image: Aachi11 },
-  { image: Aachi12 },
-  { image: Aachi13 },
-  { image: Aachi14 },
+  {
+    category: "Aachi",
+    imagesData: [
+      [Aachi1, "Biryani Masala"],
+      [Aachi2, "Chicken kebab "],
+      [Aachi3, "Chicken Masala"],
+      [Aachi4, "Chilli Masala"],
+      [Aachi5, "Curry Masala"],
+      [Aachi6, "Coriander Masala"],
+      [Aachi8, "Egg Curry Masala"],
+      [Aachi9, "Fish Curry Masala"],
+      [Aachi10, "Garam Masala"],
+      [Aachi11, "Kulambu Chilly Masala"],
+      [Aachi12, "Mutton Masala"],
+      [Aachi13, "Sambar Masala"],
+      [Aachi14, "Turmeric Masala"],
+    ],
+  },
+  {
+    category: "Aavin",
+    imagesData: [
+      [Aavin1, "Delite"],
+      [Aavin2, "Diet"],
+      [Aavin3, "Green Magic"],
+      [Aavin4, "Nice"],
+      [Aavin5, "Premium"],
+    ],
+  },
 ];
 
 export const bestSellProducts = [
