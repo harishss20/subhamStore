@@ -30,7 +30,6 @@ import Aachi3 from "../assets/productImages/Aachi/webp/3.webp";
 import Aachi4 from "../assets/productImages/Aachi/webp/4.webp";
 import Aachi5 from "../assets/productImages/Aachi/webp/5.webp";
 import Aachi6 from "../assets/productImages/Aachi/webp/6.webp";
-
 import Aachi8 from "../assets/productImages/Aachi/webp/8.webp";
 import Aachi9 from "../assets/productImages/Aachi/webp/9.webp";
 import Aachi10 from "../assets/productImages/Aachi/webp/10.webp";
@@ -45,6 +44,26 @@ import Aavin2 from "../assets/productImages/aavin/webp/2.webp";
 import Aavin3 from "../assets/productImages/aavin/webp/3.webp";
 import Aavin4 from "../assets/productImages/aavin/webp/4.webp";
 import Aavin5 from "../assets/productImages/aavin/webp/5.webp";
+
+//3
+import Ariel1 from "../assets/productImages/ariel/webp/1.webp";
+import Ariel2 from "../assets/productImages/ariel/webp/2.webp";
+import Ariel3 from "../assets/productImages/ariel/webp/3.webp";
+import Ariel4 from "../assets/productImages/ariel/webp/4.webp";
+import Ariel5 from "../assets/productImages/ariel/webp/5.webp";
+import Ariel6 from "../assets/productImages/ariel/webp/6.webp";
+
+//4
+import Aroma1 from "../assets/productImages/aroma/webp/1.webp";
+import Aroma2 from "../assets/productImages/aroma/webp/2.webp";
+import Aroma3 from "../assets/productImages/aroma/webp/3.webp";
+import Aroma4 from "../assets/productImages/aroma/webp/4.webp";
+
+//5
+import Boost1 from "../assets/productImages/Boost/webp/1.webp";
+import Boost2 from "../assets/productImages/Boost/webp/2.webp";
+import Boost3 from "../assets/productImages/Boost/webp/3.webp";
+import Boost4 from "../assets/productImages/Boost/webp/4.webp";
 
 export const ProductData = [
   {
@@ -73,6 +92,35 @@ export const ProductData = [
       [Aavin3, "Green Magic"],
       [Aavin4, "Nice"],
       [Aavin5, "Premium"],
+    ],
+  },
+  {
+    category: "Ariel",
+    imagesData: [
+      [Ariel1, "Color Care"],
+      [Ariel2, "Complete +"],
+      [Ariel3, "Matic"],
+      [Ariel4, "Matic Liquid (3.2 L)"],
+      [Ariel5, "Matic Liquid (6 L)"],
+      [Ariel6, "Matic Offer"],
+    ],
+  },
+  {
+    category: "Aroma",
+    imagesData: [
+      [Aroma1, "Double Toned Milk"],
+      [Aroma2, "Rich Cream Milk"],
+      [Aroma3, "Standardis Milk"],
+      [Aroma4, "Farm Fresh Milk"],
+    ],
+  },
+  {
+    category: "Boost",
+    imagesData: [
+      [Boost1, "Boost"],
+      [Boost3, "Nutrition Drink Powder "],
+      [Boost2, "Chocolate Nutrition "],
+      [Boost4, "Nutrition Drink Refill"],
     ],
   },
 ];

@@ -80,7 +80,7 @@ function ProductsList() {
                 <ProductCategory key={index} category={category} />
               ))
             ) : (
-              <p>No products available for this brand.</p>
+              <p>To view our Products click the Respective Brand Logos.</p>
             )}
           </div>
         </div>
