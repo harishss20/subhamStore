@@ -1,7 +1,7 @@
 import React from "react";
 import LogoImage from "../assets/logo.png";
-import { ProductData } from "./Utils.jsx";
-const brands = ProductData;
+import { ProductBrandData } from "./Utils.jsx";
+const brands = ProductBrandData;
 function ProductsList() {
   const handleClick = () => {
     console.log("hello");

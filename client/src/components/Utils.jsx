@@ -1,6 +1,8 @@
 import Image1 from "../assets/image1.jpg";
 import Image2 from "../assets/image2.jpg";
 import Image3 from "../assets/image3.jpg";
+
+//brands
 import AachiImage from "../assets/productImages/Aachi/webp/Aachi.webp";
 import AavinImage from "../assets/productImages/aavin/webp/aavin.webp";
 import ArielImage from "../assets/productImages/ariel/webp/ARIEL.webp";
@@ -20,6 +22,39 @@ import SurfExcelImage from "../assets/productImages/surfexcel/webp/surf.webp";
 import TideImage from "../assets/productImages/tide/webp/tide.webp";
 import TataImage from "../assets/productImages/surfexcel/webp/tata.webp";
 
+//productData
+import Aachi1 from "../assets/productImages/Aachi/webp/1.webp";
+import Aachi2 from "../assets/productImages/Aachi/webp/2.webp";
+import Aachi3 from "../assets/productImages/Aachi/webp/3.webp";
+import Aachi4 from "../assets/productImages/Aachi/webp/4.webp";
+import Aachi5 from "../assets/productImages/Aachi/webp/5.webp";
+import Aachi6 from "../assets/productImages/Aachi/webp/6.webp";
+import Aachi7 from "../assets/productImages/Aachi/webp/7.webp";
+import Aachi8 from "../assets/productImages/Aachi/webp/8.webp";
+import Aachi9 from "../assets/productImages/Aachi/webp/9.webp";
+import Aachi10 from "../assets/productImages/Aachi/webp/10.webp";
+import Aachi11 from "../assets/productImages/Aachi/webp/11.webp";
+import Aachi12 from "../assets/productImages/Aachi/webp/12.webp";
+import Aachi13 from "../assets/productImages/Aachi/webp/13.webp";
+import Aachi14 from "../assets/productImages/Aachi/webp/14.webp";
+
+export const ProductData = [
+  { image: Aachi1 },
+  { image: Aachi2 },
+  { image: Aachi3 },
+  { image: Aachi4 },
+  { image: Aachi5 },
+  { image: Aachi6 },
+  { image: Aachi7 },
+  { image: Aachi8 },
+  { image: Aachi9 },
+  { image: Aachi10 },
+  { image: Aachi11 },
+  { image: Aachi12 },
+  { image: Aachi13 },
+  { image: Aachi14 },
+];
+
 export const bestSellProducts = [
   {
     header: "Milk Products",
@@ -38,7 +73,7 @@ export const bestSellProducts = [
   },
 ];
 
-export const ProductData = [
+export const ProductBrandData = [
   { name: "Aachi", image: AachiImage, index: 1 },
   { name: "Aavin", image: AavinImage, index: 2 },
   { name: "Ariel", image: ArielImage, index: 3 },

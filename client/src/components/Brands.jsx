@@ -2,9 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ProductData } from "./Utils.jsx";
+import { ProductBrandData } from "./Utils.jsx";
 function Brands() {
-  const brands = ProductData;
+  const brands = ProductBrandData;
   const settings = {
     infinite: true,
     slidesToShow: 6,
