@@ -176,6 +176,26 @@ import Surf5 from "../assets/productImages/surfexcel/webp/5.webp";
 import Surf6 from "../assets/productImages/surfexcel/webp/6.webp";
 import Surf7 from "../assets/productImages/surfexcel/webp/7.webp";
 
+//20
+import Tata1 from "../assets/productImages/tata/webp/1.webp";
+import Tata2 from "../assets/productImages/tata/webp/2.webp";
+import Tata3 from "../assets/productImages/tata/webp/3.webp";
+import Tata4 from "../assets/productImages/tata/webp/4.webp";
+import Tata5 from "../assets/productImages/tata/webp/5.webp";
+import Tata6 from "../assets/productImages/tata/webp/6.webp";
+import Tata7 from "../assets/productImages/tata/webp/7.webp";
+import Tata8 from "../assets/productImages/tata/webp/8.webp";
+import Tata9 from "../assets/productImages/tata/webp/9.webp";
+import Tata10 from "../assets/productImages/tata/webp/10.webp";
+
+//21
+
+import Tide1 from "../assets/productImages/tide/webp/1.webp";
+import Tide2 from "../assets/productImages/tide/webp/2.webp";
+import Tide3 from "../assets/productImages/tide/webp/3.webp";
+import Tide4 from "../assets/productImages/tide/webp/4.webp";
+import Tide5 from "../assets/productImages/tide/webp/5.webp";
+
 export const ProductData = [
   {
     category: "Aachi",
@@ -376,18 +396,29 @@ export const ProductData = [
     ],
   },
   {
-    category: "Fortune",
+    category: "Tata",
     imagesData: [
-      [Fortune1, "Grand Classic (50g)"],
-      [Fortune2, "Grand Coffee (50g)"],
-      [Fortune3, "Grand Premium Coffee (100g)"],
-      [Fortune4, "Quick Filter (100g)"],
-      [Fortune5, "Agni Special Leaf (100g)"],
-      [Fortune6, "Chakra Gold Tea (100g)"],
-      [Fortune7, "Chakra Gold Care (100g)"],
-      [Fortune8, "Kanan Devan Classic (100g)"],
-      [Fortune9, "Rice Bran Health (5L)"],
-      [Fortune10, "Tea Premium (100g)"],
+      [Tata1, "Grand Classic (50g)"],
+      [Tata2, "Grand Coffee (50g)"],
+      [Tata3, "Grand Premium Coffee (100g)"],
+      [Tata4, "Quick Filter (100g)"],
+      [Tata5, "Agni Special Leaf (100g)"],
+      [Tata6, "Chakra Gold Tea (100g)"],
+      [Tata7, "Chakra Gold Care (100g)"],
+      [Tata8, "Kanan Devan Classic (100g)"],
+      [Tata9, "Rice Bran Health (5L)"],
+      [Tata10, "Tea Premium (100g)"],
+    ],
+  },
+
+  {
+    category: "Tide",
+    imagesData: [
+      [Tide1, "Double Power (5kg)"],
+      [Tide2, "Double Power (8kg)"],
+      [Tide3, "Double Power (100g)"],
+      [Tide4, "Tide Naturals (100g)"],
+      [Tide5, "Tide Ultra (100g)"],
     ],
   },
 ];
