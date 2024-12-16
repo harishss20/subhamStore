@@ -15,7 +15,7 @@ const BrandsList = ({ brands, onBrandClick }) => {
               <img
                 src={brand.image}
                 alt={brand.name}
-                className="w-24 p-2 rounded-2xl "
+                className="w-24 p-2 rounded-2xl h-20"
               />
             </li>
           </ul>
