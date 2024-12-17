@@ -7,8 +7,8 @@ function Products() {
     navigate("/productsList");
   };
   return (
-    <div className="flex text-black m-10  font-serif items-center justify-center cursor-pointer">
-      <div className="flex flex-col border  hover:scale-105 duration-300 justify-center items-center w-10/12  rounded-lg hover:border--4 shadow-2xl p-10">
+    <div className="flex text-black m-10  font-serif items-center justify-center ">
+      <div className="flex flex-col   hover:scale-105 duration-300 justify-center items-center w-10/12   ">
         <h1 className="flex ~text-lg/2xl justify-center items-center">
           Welcome to Shubham Store
         </h1>
@@ -17,7 +17,7 @@ function Products() {
         </p>
         <button onClick={handleClick}>
           <svg
-            class="w-6 h-6 text-gray-800 dark:text-black animate-bounce"
+            className="w-6 h-6 text-gray-800 dark:text-black animate-bounce cursor-pointer"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
