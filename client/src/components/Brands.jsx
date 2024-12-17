@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,6 +8,7 @@ function Brands() {
   const navigate = useNavigate();
   const handleClick = () => {
     navigate("/productsList");
+    window.scrollTo(0, 0);
   };
   const brands = ProductBrandData;
   const settings = {
@@ -35,15 +36,15 @@ function Brands() {
   return (
     <div className="w-full  text-black bg-first p-10">
       <div className="font-gilroy   w-full">
-        <div className="flex flex-row ">
-          <h1 className="mb-12 text-lg sm:text-4xl font-serif ">
+        <div className="flex justify-between items-center mx-14  mb-12">
+          <h1 className="text-lg sm:text-4xl font-serif">
             Our Exclusive Brands
           </h1>
           <button
             onClick={handleClick}
-            className="h-12 text-blue-500 underline hover:text-blue-700 transition duration-200 "
+            className="h-12 text-black underline  hover:text-second  transition duration-200"
           >
-            See all
+            All Products
           </button>
         </div>
         <Slider {...settings}>

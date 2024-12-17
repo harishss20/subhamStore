@@ -1,9 +1,9 @@
 import React from "react";
-import bag from "../assets/bag.png";
-import dairyProducts from "../assets/dairyProducts.png";
+
+import { Button } from "@material-tailwind/react";
 import "../App.css";
 function SideImage() {
-  return <h1></h1>;
+  return <Button>Button</Button>;
 }
 
 export default SideImage;

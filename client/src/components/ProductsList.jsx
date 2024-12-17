@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LogoImage from "../assets/logo.png";
 import { ProductBrandData, ProductData } from "./Utils.jsx";
 
@@ -53,6 +53,11 @@ const ProductCategory = ({ category }) => {
 
 function ProductsList() {
   const [selectedBrand, setSelectedBrand] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const filteredProducts = ProductData.filter((category) =>
     category.category.toLowerCase().includes(selectedBrand?.toLowerCase())
   );
