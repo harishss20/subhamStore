@@ -71,7 +71,9 @@ function ProductsList() {
       <div className="flex mt-10 gap-56 font-serif text-black space-y-4">
         <div className="flex mt-3">
           <img src={LogoImage} alt="logo" className="w-12 h-12" />
-          <h1 className="text-2xl mt-2 font-serif font-bold">Our Products</h1>
+          <h1 className="text-2xl mt-2 font-serif font-bold">
+            Our Products List
+          </h1>
         </div>
       </div>
 
