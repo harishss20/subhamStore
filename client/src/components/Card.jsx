@@ -4,7 +4,7 @@ import { bestSellProducts } from "./Utils";
 
 function CardItem({ header, description, image }) {
   return (
-    <div className="card-container bg-white text-black p-4 rounded-lg shadow-lg flex-1 w-full max-w-full sm:max-w-sm min-h-[150px] duration-500 ease-in-out transform hover:rotate-3 hover:scale-105 cursor-pointer relative overflow-hidden sm:min-h-[180px]">
+    <div className="card-container bg-white text-black p-4 rounded-xl shadow-lg flex-1 w-full max-w-full sm:max-w-sm min-h-[150px] duration-500 ease-in-out transform hover:rotate-3 hover:scale-105 cursor-pointer relative overflow-hidden sm:min-h-[180px]">
       <div className="absolute inset-0 flex flex-col justify-center items-center p-4 sm:p-6 z-20 bg-white  hover:opacity-0 transition-opacity duration-500">
         <h2 className="text-base font-bold sm:text-lg lg:text-xl">{header}</h2>
         <p className="mt-2 text-sm sm:text-base lg:text-lg">{description}</p>

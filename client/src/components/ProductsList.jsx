@@ -4,6 +4,7 @@ import { ProductBrandData, ProductData } from "./Utils.jsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import brandImage from "../assets/brand.webp";
 const BrandsList = ({ brands, onBrandClick }) => {
   const settings = {
     infinite: true,
@@ -113,15 +114,22 @@ function ProductsList() {
       <div className="flex flex-col mt-8 items-center">
         <BrandsList brands={ProductBrandData} onBrandClick={handleBrandClick} />
 
-        <div className="flex flex-wrap gap-8   shadow-2xl my-10 p-6 text-black bg-white rounded-lg font-serif w-10/12">
+        <div className="flex flex-wrap gap-8 justify-center items-center shadow-2xl my-10 p-6 text-black bg-white rounded-lg font-serif w-10/12">
           {selectedBrand && filteredProducts.length > 0 ? (
             filteredProducts.map((category, index) => (
               <ProductCategory key={index} category={category} />
             ))
           ) : (
-            <p className="text-center text-black">
-              To view our products, click the respective brand logos above.
-            </p>
+            <div className="flex flex-col justify-center items-center ">
+              <p className="text-center text-sm sm:text-4xl text-black mb-4">
+                To view our products, click the respective brand logos above.
+              </p>
+              <img
+                src={brandImage}
+                alt="Select Brand Logo"
+                className="w-96 h-96"
+              />
+            </div>
           )}
         </div>
       </div>

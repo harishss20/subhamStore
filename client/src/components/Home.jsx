@@ -18,15 +18,15 @@ const Home = () => {
             <img id="logo-container" src={logo} alt="Logo" className="h-8" />
             <h2 className="text-xl font-bold cursor-pointer">Sri Subham</h2>
           </div>
-          {/* Links Section */}
-          <div className="flex items-center text-white space-x-6">
+          {/* App Section */}
+          {/* <div className="flex items-center text-white space-x-6">
             <a
-              href="https://apps.microsoft.com/detail/XPFD4T9N395QN6?hl=en-US&gl=US&ocid=pdpshare"
+              href=""
               className="bg-black text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:ease-in-out transition sm:text-sm"
             >
               Get the App
             </a>
-          </div>
+          </div> */}
         </header>
 
         {/* Main Section */}
@@ -41,7 +41,7 @@ const Home = () => {
             <input
               type="text"
               required
-              className="bg-white border rounded-md w-80 h-10 text-black pl-10 pr-4 p-2"
+              className="bg-white border rounded-full w-80 h-10 text-black pl-10 pr-4 p-2"
               placeholder="Search Location"
             />
             <svg
@@ -58,10 +58,8 @@ const Home = () => {
             </svg>
           </div>
 
-          {/* Images */}
           <div id="image-container"></div>
 
-          {/* Cards Section */}
           <Card />
         </main>
       </div>

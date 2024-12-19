@@ -51,7 +51,7 @@ function Brands() {
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="flex mt-2 duration-300 pointer-cursor flex-col items-center justify-center gap-2 hover:scale-105"
+              className="flex mt-2 duration-300 pointer-cursor flex-col items-center justify-center gap-2 hover:scale-105 mb-8 "
             >
               <div>
                 <img
