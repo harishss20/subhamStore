@@ -4,22 +4,24 @@ import { ProductBrandData, ProductData } from "./Utils.jsx";
 
 const BrandsList = ({ brands, onBrandClick }) => {
   return (
-    <div className="flex flex-row overflow-x-auto border-2 w-1/2 shadow-xl my-10 mx-4 sm:mx-20 p-4 text-gray-800 bg-white rounded-lg font-serif space-x-6 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400 transition-all duration-300 scroll-smooth">
+    <div
+      className="flex flex-row overflow-x-auto border-none w-9/12 shadow-xl my-10 mx-4 sm:mx-20 p-4 text-black bg-white rounded-lg font-serif space-x-6 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400 transition-all duration-300 scroll-smooth"
+      onWheel={(e) => {
+        e.currentTarget.scrollLeft += e.deltaY;
+      }}
+    >
       {brands.map((brand, index) => (
         <div key={index} className="flex-shrink-0 snap-center">
           <ul>
             <li
-              className="hover:bg-gray-100 transition-transform transform duration-300 ease-out hover:scale-105 rounded-md cursor-pointer p-3 shadow-md"
+              className="hover:bg-gray-100 transition-transform transform duration-300 ease-out hover:scale-105 rounded-lg cursor-pointer p-3 shadow-md"
               onClick={() => onBrandClick(brand.name)}
             >
               <img
                 src={brand.image}
                 alt={brand.name}
-                className="w-24 h-24 object-cover rounded-full mx-auto"
+                className="w-24 h-24 object-cover rounded-lg mx-auto"
               />
-              <p className="text-center mt-2 text-sm font-medium">
-                {brand.name}
-              </p>
             </li>
           </ul>
         </div>
