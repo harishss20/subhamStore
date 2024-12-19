@@ -1,31 +1,64 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import LogoImage from "../assets/logo.png";
 import { ProductBrandData, ProductData } from "./Utils.jsx";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const BrandsList = ({ brands, onBrandClick }) => {
+  const settings = {
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "10px",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "5px",
+        },
+      },
+    ],
+  };
+
   return (
-    <div
-      className="flex flex-row overflow-x-auto border-none w-9/12 shadow-xl my-10 mx-4 sm:mx-20 p-4 text-black bg-white rounded-lg font-serif space-x-6 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400 transition-all duration-300 scroll-smooth"
-      onWheel={(e) => {
-        e.currentTarget.scrollLeft += e.deltaY;
-      }}
-    >
-      {brands.map((brand, index) => (
-        <div key={index} className="flex-shrink-0 snap-center">
-          <ul>
-            <li
-              className="hover:bg-gray-100 transition-transform transform duration-300 ease-out hover:scale-105 rounded-lg cursor-pointer p-3 shadow-md"
-              onClick={() => onBrandClick(brand.name)}
-            >
+    <div className="slider-container">
+      <Slider {...settings}>
+        {brands.map((brand, index) => (
+          <div
+            key={index}
+            className="flex w-10/12 mt-2 duration-300 pointer-cursor flex-col items-center justify-center gap-2 hover:scale-105"
+          >
+            <div>
               <img
                 src={brand.image}
                 alt={brand.name}
-                className="w-24 h-24 object-cover rounded-lg mx-auto"
+                className="w-32 h-32 object-cover mx-auto border-2 border-black rounded-full shadow-2xl cursor-pointer"
+                onClick={() => {
+                  onBrandClick(brand.name);
+                }}
               />
-            </li>
-          </ul>
-        </div>
-      ))}
+            </div>
+            <h1 className="text-lg text-center text-black mt-2">
+              {brand.name}
+            </h1>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
@@ -38,15 +71,15 @@ const ProductCategory = ({ category }) => {
         {category.imagesData.map((data, idx) => (
           <div
             key={idx}
-            className="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 duration-300 hover:text-gray-700"
+            className="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 duration-300 hover:text-gray-700 hover:text-second"
           >
             <img
               src={data[0]}
               alt={`${category.category} product`}
-              className="w-full h-20 sm:h-48 p-2 object-cover"
+              className="w-full sm:w-full h-40 sm:h-72 p-4  object-cover"
             />
             <div className="p-4">
-              <p className="text-center text-sm font-medium">{data[1]}</p>
+              <p className="text-center text-lg  font-medium">{data[1]}</p>
             </div>
           </div>
         ))}
@@ -77,16 +110,16 @@ function ProductsList() {
         <h1 className="text-xl font-serif font-bold">Our Products</h1>
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col mt-8 items-center">
         <BrandsList brands={ProductBrandData} onBrandClick={handleBrandClick} />
 
-        <div className="flex flex-wrap gap-8 w-full max-w-5xl shadow-2xl my-10 p-6 text-black bg-white rounded-lg font-serif">
+        <div className="flex flex-wrap gap-8   shadow-2xl my-10 p-6 text-black bg-white rounded-lg font-serif w-10/12">
           {selectedBrand && filteredProducts.length > 0 ? (
             filteredProducts.map((category, index) => (
               <ProductCategory key={index} category={category} />
             ))
           ) : (
-            <p className="text-center text-gray-600">
+            <p className="text-center text-black">
               To view our products, click the respective brand logos above.
             </p>
           )}

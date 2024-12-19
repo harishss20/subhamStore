@@ -16,7 +16,7 @@ const Home = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
             <img id="logo-container" src={logo} alt="Logo" className="h-8" />
-            <h2 className="text-xl font-bold cursor-pointer">Shubham Store</h2>
+            <h2 className="text-xl font-bold cursor-pointer">Sri Subham</h2>
           </div>
           {/* Links Section */}
           <div className="flex items-center text-white space-x-6">

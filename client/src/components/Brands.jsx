@@ -42,7 +42,7 @@ function Brands() {
           </h1>
           <button
             onClick={handleClick}
-            className="h-12 text-black underline  hover:text-second  transition duration-200"
+            className="h-10 text-black underline text-2xl hover:text-second  transition duration-200"
           >
             All Products
           </button>

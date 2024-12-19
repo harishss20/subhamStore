@@ -30,13 +30,31 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  scroll-behavior: smooth; /* Keeps horizontal overflow hidden */
+  scroll-behavior: smooth;
 }
 
 .brand-image {
-  width: 100px; /* Adjust size */
-  height: 100px; /* Adjust size */
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 50%; /* Makes the image round */
-  border: 2px solid #fff; /* Optional border */
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.slider-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.slick-prev,
+.slick-next {
+  display: block !important;
+  z-index: 10;
+  color: black;
+  font-size: 24px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
 }
