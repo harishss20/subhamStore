@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import brandImage from "../assets/brand.webp";
-import Footer from "./Footer.jsx";
 const BrandsList = ({ brands, onBrandClick }) => {
   const settings = {
     infinite: true,
@@ -134,7 +133,6 @@ function ProductsList() {
           )}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
