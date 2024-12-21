@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     screens: {
       sm: "640px",
@@ -17,6 +18,7 @@ export default {
       black: "#1B1833",
       green: "#F0F8FF",
       lightBrown: "#FDF7F4",
+      gray: "#9AA6B2",
     },
     extend: {
       keyframes: {
