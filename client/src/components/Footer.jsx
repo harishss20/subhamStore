@@ -51,7 +51,7 @@ const Footer = () => {
               Contact Us
             </h3>
             <p className="text-gray">Email: srisubhamstores@gmail.com</p>
-            <p className="text-gray">Phone: +91</p>
+            <p className="text-gray">Phone: +91 7603824925</p>
             <p className="text-gray">
               Location: No 90/1 Aranmanai Street, Vadakarai, Periyakulam, Theni
               - 625601
